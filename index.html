@@ -61,8 +61,8 @@
         }
       });
       
-     if(list.lenght == 0){
-      list.textContent = "not a single book"
+     if (list.innerHTML ==="") {
+      list.innerHTML=`<p>not a single book</p>`;
      }
       //add book
       const addForm = document.querySelector("#add-book");
