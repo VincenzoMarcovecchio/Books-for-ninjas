@@ -60,8 +60,11 @@
           list.removeChild(li);
         }
       });
-
-      //add books
+      
+     if(list.lenght == 0){
+      list.textContent = "not a single book"
+     }
+      //add book
       const addForm = document.querySelector("#add-book");
 
       addForm.addEventListener("submit", function(e) {
